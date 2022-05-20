@@ -338,7 +338,6 @@ ul li.list::before {
 }
 
 .nav-selected:hover {
-  color: black;
   font-size: 9vw;
 }
 
@@ -376,19 +375,6 @@ ul li.list::before {
 }
 
 @media only screen and (min-width: 480px) {
-  .bal-handle::before,
-  .bal-handle::after {
-    content: " ";
-    border: 2px solid #c0c0c0;
-    display: block;
-    width: 2%;
-    background: #c0c0c0;
-    height: 250%;
-    position: absolute;
-    left: 50%;
-    margin-left: -1.5px;
-  }
-
   .text1 {
     font-size: 4vw;
   }
@@ -557,19 +543,20 @@ ul li.list::before {
 
   /* rows */
   .row1 {
-    margin-top: 6%;
+    margin-top: 17%;
     grid-template-columns: 50% 50%;
   }
 
   .row2 {
     margin-top: 0;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 100%;
   }
 
   .row3 {
     display: grid;
-    grid-template-columns: 88%;
+    grid-template-columns: 50% 50%;
     justify-content: center;
+    margin-top: 3%;
   }
 
   .row4 {
@@ -581,9 +568,7 @@ ul li.list::before {
   .img1 {
     width: 100%;
     display: block;
-    margin: 8% auto 0;
-    box-shadow: none;
-    -webkit-box-shadow: none;
+    margin: 0% auto 0;
     position: relative;
     z-index: -1;
   }
@@ -597,24 +582,34 @@ ul li.list::before {
   }
   /* images */
 
+  /* list */
+  ul li.list::before {
+    font-size: 2vw;
+}
+
+  /* list */
+
   /* text */
   .header-p {
     font-size: 1.75vw;
     padding-bottom: 12%;
-    font-weight: 300;
+    font-weight: 500;
     font-size: 2.6vw;
   }
 
   .text1 {
-    text-align: start;
     font-size: 2.25vw;
-    margin: 0 0 0 20%;
+    margin: 0 10% 5% 15%;
   }
 
   .text2 {
-    text-align: start;
     font-size: 2.25vw;
-    margin: 0 0 0 20%;
+    margin: 3% 8% 10%;
+  }
+
+  .text3 {
+    font-size: 2.25vw;
+    margin: 3% 7% 10%;
   }
 
   /* text */
@@ -624,20 +619,26 @@ ul li.list::before {
   .title1 {
     font-size: 5vw;
     padding-top: 12%;
+    
   }
 
   .title2 {
     font-size: 4vw;
     padding-top: 7%;
     text-align: start;
-    margin-left: 20%;
+    margin: 3% auto 4% 15%;
   }
 
   .title3 {
     font-size: 4vw;
     padding-top: 10%;
+  }
+
+  .title4 {
+    font-size: 4vw;
+    padding-top: 5%;
     text-align: start;
-    margin-left: 20%;
+    margin-left: 7%;
   }
   /* title */
 
@@ -714,7 +715,7 @@ ul li.list::before {
 @media only screen and (min-width: 1920px) {
   /* rows */
   .row1 {
-    margin-top: 5%;
+    margin-top: 12%;
     grid-template-columns: 50% 50%;
   }
 
@@ -722,24 +723,30 @@ ul li.list::before {
   /* title */
   .title1 {
     font-size: 4.6vw;
-    padding-top: 10%;
+    padding-top: 6%;
     margin-bottom: 2%;
   }
 
   .title2 {
     font-size: 3vw;
-    font-weight: 700;
-    padding-top: 10%;
+    font-weight: 500;
+    padding-top: 20%;
     text-align: start;
     margin-left: 20%;
   }
 
   .title3 {
     font-size: 3vw;
-    font-weight: 700;
-    padding-top: 19%;
+    font-weight: 500;
+    padding-top: 10%;
+  }
+
+  .title4 {
     text-align: start;
-    margin-left: 20%;
+    font-size: 3vw;
+    font-weight: 500;
+    padding-top: 20%;
+    margin-left: 17%;
   }
 
   /* title */
@@ -747,7 +754,8 @@ ul li.list::before {
   /* text */
 
   .header-p {
-    padding-bottom: 10%;
+    padding-bottom: 6%;
+    margin: 0 9.7%;
     font-weight: 500;
     font-size: 2.25vw;
   }
@@ -755,13 +763,17 @@ ul li.list::before {
   .text1 {
     text-align: start;
     font-size: 1.75vw;
-    margin: 0 0 0 20%;
+    margin: 0 20% 4% 20%
   }
 
   .text2 {
-    text-align: start;
     font-size: 1.75vw;
-    margin: 0 0 0 20%;
+    margin: 3% 17% 10%;
+  }
+
+  .text3 {
+    font-size: 1.75vw;
+    margin: 3% 17% 10%;
   }
 
   /* text */
